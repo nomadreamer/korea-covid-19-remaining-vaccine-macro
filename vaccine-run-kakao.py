@@ -506,7 +506,10 @@ def find_vaccine(vaccine_type, top_x, top_y, bottom_x, bottom_y):
 
 
 def main_function():
-    load_cookie()
+    global jar
+    jar = {
+      '_kawlt': 'YJmY2h8WvtPqDS9on_KBTGPjPJwFFtj6wkHcjJuvAEAWN4ds1hfvovzLZihK7GMjSk47Wv93uGSg1M2gw-gORYCLP3cdHy6CE8jHGMv6v8F15_J_a8iy-8IjrIUpkxak'
+    }
     check_user_info_loaded()
     previous_used_type, previous_top_x, previous_top_y, previous_bottom_x, previous_bottom_y = load_config()
     if previous_used_type is None:
